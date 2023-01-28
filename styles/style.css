@@ -112,7 +112,6 @@ form{
 .navbar{
     display: flex;
     justify-content: space-between;
-    max-width: 117rem;
     margin: 0 auto 0 auto;
     padding-top: 2.8rem;
 }
