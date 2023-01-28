@@ -1,7 +1,7 @@
 :root{
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
-    --primary-textcolor: #FF7B47;
+    --primary-cardcolor: #0B1C47;
     box-sizing: border-box;
 }
 
@@ -14,6 +14,34 @@ body{
     background-color: #010B26;
     margin: 0;
     padding: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+header{
+    margin-bottom: 6.8rem;
+}
+
+.arr{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 117rem;
+    margin: 0 auto 0 auto;
+    padding-top: 2.8rem;
+}
+
+.nav{
+    background-color: transparent;
+    border: none;
+    height: 3.6rem;
+}
+
+nav{
+    display: none;
 }
 
 .wrapper{
@@ -22,8 +50,101 @@ body{
     max-width: 105rem;
 }
 
-@media screen and (min-width: 650px){
+h1{
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 5.9rem;
+    color: #fff;
+
+}
+
+#arrows{
+    display: none;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-cardcolor);
+    width: 29rem;
+    height: 18.7rem;
+    padding-top: 4rem;
+    padding-bottom: 4.1rem;
+    border-radius: 5px;
+}
+
+p{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navlinks{
+    display: none;
+}
+
+#active-page{
+    font-weight: 500;
+    color: rgb(255,255,255);
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li a{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(255,255,255,0.7);
+}
+
+@media screen and (min-width: 1000px){
     #arrows{
+        display: flex;
+    }
+    
+    .card{
+        width: 71rem;
+        height: 35.4rem;
+    }
+
+    h1{
+        font-size: 4.8rem;
+    }
+
+    .navarrows{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .arr{
+        display: block;
+        width: 9rem;
+        height: 1.2rem;
+    }
+
+    .nav{
         display: none;
+    }
+
+    .navlinks{
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
     }
 }

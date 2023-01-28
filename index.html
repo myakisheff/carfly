@@ -49,29 +49,75 @@
     <main>
       <section class="where-to-buy">
         <div class="wrapper">
-
-            <h1>Где купить?</h1>
-            <div id="arrows">
-                <img src="img/leftarrow.svg" alt="left">
-                <img src="img/rightarrow.svg" alt="right">
+            <div class="navarrows">
+                <h1>Где купить?</h1>
+                <div id="arrows">
+                    <img src="img/leftarrow.svg" alt="left" class="arr">
+                    <img src="img/rightarrow.svg" alt="right" class="arr">
+                </div>
             </div>
 
             <article>
-                <a href="market.yandex.ru" class="card">
-                        <img src="img/yandexlogo.svg" alt="yandex market">
+                <a href="https://market.yandex.ru" class="card">
+                        <img src="img/yandexlogo.svg" alt="yandex market" height="48" width="48">
                         <p>market.yandex.ru</p>
                 </a>
 
-                <a href="detaliclub.ru" class="card">
-                    <img src="img/detalilogo.svg" alt="detaliclub">
+                <a href="https://detaliclub.ru" class="card">
+                    <img src="img/detalilogo.svg" alt="detaliclub" height="48" width="48">
                     <p>detaliclub.ru</p>
                 </a>
             </article>
         </div>
       </section>
 
-      <section class="video-container">
+      <section class="form">
         <div class="wrapper">
+            <form action="//httpbin.org/post" name="contact" method="POST" class="form-s" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
+      
+                <fieldset>
+                  <legend>Contact information</legend>
+                  <p>
+                    <span class="textt" class="textt">Email:</span>
+                    <label
+                      ><input
+                        type="email"
+                        placeholder="example@gmail.com"
+                        name="E-Mail"
+                    /></label>
+                  </p>
+      
+                  <p>
+                    <span class="textt">Телефон:</span>
+                    <label
+                      ><input
+                        type="tel"
+                        placeholder="+7 (XXX)-XXX-XX-XX"
+                        name="Phone Number"
+                        pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                    /></label>
+                  </p>
+      
+                  <div id="Gen">
+                    <p>
+                      <span class="textt">Пол:</span>
+                      <label id="gender">
+                        <label for="Male">Мужской</label>
+                        <input type="radio" id="Male" name="Gender" required />
+                        <label for="Female">Женский</label>
+                        <input type="radio" id="Female" name="Gender" />
+                      </label>
+                    </p>
+                  </div>
+                </fieldset>
+      
+                <button type="submit" class="formbtn">
+                  Submit
+                  <img src="img/form/arrow_right.svg" alt="send" height="30" />
+                </button>
+    
+              </form>
         </div>
       </section>
 
