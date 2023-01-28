@@ -64,6 +64,7 @@
 
       <section class="form">
         <div class="wrapper">
+            <h2>Form</h2>
             <form action="//httpbin.org/post" name="contact" method="POST" class="form-s" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
       
@@ -79,7 +80,6 @@
                     /></label>
                   </p>
 
-                  <legend>Form</legend>
                   <p>
                     <label class="textt"
                       >Email:<input
@@ -89,16 +89,12 @@
                     /></label>
                   </p>
       
-                  <div id="Gen">
-                    <p>
-                      <label id="gender">
-                        <label for="Male">Мужской</label>
-                        <input type="radio" id="Male" name="Gender" required />
-                        <label for="Female">Женский</label>
-                        <input type="radio" id="Female" name="Gender" />
-                      </label>
-                    </p>
-                  </div>
+                    <div id="gender">
+                    <label for="Male">Мужской</label>
+                    <input type="radio" id="Male" name="Gender" required />
+                    <label for="Female">Женский</label>
+                    <input type="radio" id="Female" name="Gender" />
+                    </div>
                 </fieldset>
       
                 <button type="submit" class="formbtn">
