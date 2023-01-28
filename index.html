@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Мякишев Никита Сергеевич, 211-325, 28.01.2023</title>
   </head>
@@ -19,20 +22,19 @@
     <header>
       <div class="wrapper">
         <div class="navbar">
-            <a href="#"><img src="img/logo.svg" alt="carfly"></a>
-  
-            <ul class="navlinks">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Продукция</a></li>
-                <li><a href="#" id="active-page">Где купить</a></li>
-                <li><a href="#">Вопрос-ответ</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-  
-            <button class="nav">
-              <img src="img/menu.svg" alt="menu" />
-            </button>
+          <a href="#"><img src="img/logo.svg" alt="carfly" /></a>
 
+          <ul class="navlinks">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#" id="active-page">Где купить</a></li>
+            <li><a href="#">Вопрос-ответ</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+          <button class="nav">
+            <img src="img/menu.svg" alt="menu" />
+          </button>
         </div>
       </div>
     </header>
@@ -40,75 +42,75 @@
     <main>
       <section class="where-to-buy">
         <div class="wrapper">
-            <div class="navarrows">
-                <h1>Где купить?</h1>
-                <div id="arrows">
-                    <img src="img/leftarrow.svg" alt="left" class="arr">
-                    <img src="img/rightarrow.svg" alt="right" class="arr">
-                </div>
+          <div class="navarrows">
+            <h1>Где купить?</h1>
+            <div id="arrows">
+              <img src="img/leftarrow.svg" alt="left" class="arr" />
+              <img src="img/rightarrow.svg" alt="right" class="arr" />
             </div>
+          </div>
 
-            <article>
-                <a href="https://market.yandex.ru" class="card">
-                        <img src="img/yandexlogo.svg" alt="yandex market">
-                        <p>market.yandex.ru</p>
-                </a>
+          <article>
+            <a href="https://market.yandex.ru" class="card">
+              <img src="img/yandexlogo.svg" alt="yandex market" />
+              <p>market.yandex.ru</p>
+            </a>
 
-                <a href="https://detaliclub.ru" class="card">
-                    <img src="img/detalilogo.svg" alt="detaliclub">
-                    <p>detaliclub.ru</p>
-                </a>
-            </article>
+            <a href="https://detaliclub.ru" class="card">
+              <img src="img/detalilogo.svg" alt="detaliclub" />
+              <p>detaliclub.ru</p>
+            </a>
+          </article>
         </div>
       </section>
 
       <section class="form">
         <div class="wrapper">
-            <h2>Form</h2>
-            <form action="//httpbin.org/post" name="contact" method="POST" class="form-s" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact" />
-      
-                <fieldset>
-                          
-                  <p>
-                    <label class="textt"
-                      >Телефон:<input
-                        type="tel"
-                        placeholder="+7 (XXX)-XXX-XX-XX"
-                        name="Phone Number"
-                        pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                    /></label>
-                  </p>
+          <h2>Form</h2>
+          <form
+            action="//httpbin.org/post"
+            name="contact"
+            method="POST"
+            class="form-s"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
 
-                  <p>
-                    <label class="textt"
-                      >Email:<input
-                        type="email"
-                        placeholder="example@gmail.com"
-                        name="E-Mail"
-                    /></label>
-                  </p>
-      
-                    <div id="gender">
-                    <label for="Male">Мужской</label>
-                    <input type="radio" id="Male" name="Gender" required />
-                    <label for="Female">Женский</label>
-                    <input type="radio" id="Female" name="Gender" />
-                    </div>
-                </fieldset>
-      
-                <button type="submit" class="formbtn">
-                  Submit
-                  <span class="material-symbols-outlined">
-                    done_all
-                    </span>
-                </button>
-    
-              </form>
+            <fieldset>
+              <p>
+                <label class="textt"
+                  >Телефон:<input
+                    type="tel"
+                    placeholder="+7 (XXX)-XXX-XX-XX"
+                    name="Phone Number"
+                    pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                /></label>
+              </p>
+
+              <p>
+                <label class="textt"
+                  >Email:<input
+                    type="email"
+                    placeholder="example@gmail.com"
+                    name="E-Mail"
+                /></label>
+              </p>
+
+              <div id="gender">
+                <label for="Male">Мужской</label>
+                <input type="radio" id="Male" name="Gender" required />
+                <label for="Female">Женский</label>
+                <input type="radio" id="Female" name="Gender" />
+              </div>
+            </fieldset>
+
+            <button type="submit" class="formbtn">
+              Submit
+              <span class="material-symbols-outlined"> done_all </span>
+            </button>
+          </form>
         </div>
       </section>
-
     </main>
-
   </body>
 </html>
