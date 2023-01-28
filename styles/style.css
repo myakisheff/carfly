@@ -12,6 +12,8 @@
 
 body{
     background-color: #010B26;
+    background-image: url(../img/bg.svg);
+    background-size: cover;
     margin: 0;
     padding: 0;
     padding-left: 1.5rem;
@@ -20,6 +22,87 @@ body{
 
 header{
     margin-bottom: 6.8rem;
+}
+
+li a:hover{
+    color: rgb(160, 222, 255);
+    transition: all .5s ease-out;
+}
+
+#gender{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+#gender input{
+    width: 2rem;
+    height: 2rem;
+}
+
+.textt{
+    width: 3rem;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2rem;
+    width: 32rem;
+    margin-top: 0;
+    border: 1px solid #3c3c3c;
+    border-radius: .5rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+input{
+    height: 5rem;
+    width: 30rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: 1px solid var(--primary-text-color);
+    padding-left: 1.5rem;
+}
+
+input:focus{
+    background-color: rgb(224, 226, 228);
+    transition: all .5s ease-out;
+
+    outline: none !important;
+    border: 1px solid #FF7B47;
+    box-shadow: 0 0 1rem #719ECE;
+}
+
+legend{
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+form{
+    margin-top: 3rem;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formbtn{
+    font-weight: 500;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15rem;
+    height: 6rem;
+    color: #fff;
+    background-color: #10265d;
+    margin: 1rem auto 1rem auto;
 }
 
 .arr{
@@ -40,14 +123,10 @@ header{
     height: 3.6rem;
 }
 
-nav{
-    display: none;
-}
-
 .wrapper{
     margin-left: auto;
     margin-right: auto;
-    max-width: 105rem;
+    max-width: 144rem;
 }
 
 h1{
@@ -65,6 +144,7 @@ h1{
 article{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 2rem;
 }
 
@@ -74,7 +154,7 @@ article{
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary-cardcolor);
-    width: 29rem;
+    min-width: 29rem;
     height: 18.7rem;
     padding-top: 4rem;
     padding-bottom: 4.1rem;
@@ -113,23 +193,43 @@ li a{
     color: rgb(255,255,255,0.7);
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 800px){
     #arrows{
         display: flex;
+        align-items: center;
     }
     
+    article{
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    p{
+        font-weight: 700;
+        font-size: 3.6rem;
+        color: #fff;
+    }
+
     .card{
         width: 71rem;
         height: 35.4rem;
-    }
-
-    h1{
-        font-size: 4.8rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
 
     .navarrows{
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1040px){
+    h1{
+        font-size: 4.8rem;
+    }
+
+    header{
+        margin-bottom: 26rem;
     }
 
     .arr{

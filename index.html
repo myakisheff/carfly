@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Мякишев Никита Сергеевич, 211-325, 28.01.2023</title>
   </head>
@@ -32,16 +32,7 @@
             <button class="nav">
               <img src="img/menu.svg" alt="menu" />
             </button>
-  
-          <nav>
-            <ul>
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Продукция</a></li>
-              <li><a href="#" id="active-page">Где купить</a></li>
-              <li><a href="#">Вопрос-ответ</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
+
         </div>
       </div>
     </header>
@@ -59,12 +50,12 @@
 
             <article>
                 <a href="https://market.yandex.ru" class="card">
-                        <img src="img/yandexlogo.svg" alt="yandex market" height="48" width="48">
+                        <img src="img/yandexlogo.svg" alt="yandex market">
                         <p>market.yandex.ru</p>
                 </a>
 
                 <a href="https://detaliclub.ru" class="card">
-                    <img src="img/detalilogo.svg" alt="detaliclub" height="48" width="48">
+                    <img src="img/detalilogo.svg" alt="detaliclub">
                     <p>detaliclub.ru</p>
                 </a>
             </article>
@@ -77,31 +68,29 @@
                 <input type="hidden" name="form-name" value="contact" />
       
                 <fieldset>
-                  <legend>Contact information</legend>
+                          
                   <p>
-                    <span class="textt" class="textt">Email:</span>
-                    <label
-                      ><input
-                        type="email"
-                        placeholder="example@gmail.com"
-                        name="E-Mail"
-                    /></label>
-                  </p>
-      
-                  <p>
-                    <span class="textt">Телефон:</span>
-                    <label
-                      ><input
+                    <label class="textt"
+                      >Телефон:<input
                         type="tel"
                         placeholder="+7 (XXX)-XXX-XX-XX"
                         name="Phone Number"
                         pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
                     /></label>
                   </p>
+
+                  <legend>Form</legend>
+                  <p>
+                    <label class="textt"
+                      >Email:<input
+                        type="email"
+                        placeholder="example@gmail.com"
+                        name="E-Mail"
+                    /></label>
+                  </p>
       
                   <div id="Gen">
                     <p>
-                      <span class="textt">Пол:</span>
                       <label id="gender">
                         <label for="Male">Мужской</label>
                         <input type="radio" id="Male" name="Gender" required />
@@ -114,7 +103,9 @@
       
                 <button type="submit" class="formbtn">
                   Submit
-                  <img src="img/form/arrow_right.svg" alt="send" height="30" />
+                  <span class="material-symbols-outlined">
+                    done_all
+                    </span>
                 </button>
     
               </form>
